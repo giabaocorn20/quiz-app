@@ -14,7 +14,7 @@ const tempUrl = 'https://opentdb.com/api.php?amount=10&category=9&difficulty=eas
 const AppContext = React.createContext()
 
 const AppProvider = ({ children }) => {
-  const [waiting, setWaiting] = useState(true)
+  const [waiting, setWaiting] = useState(true) //'waiting' for the user to input the setupForm (true). If it is false -> the user is doing the quiz
   const [loading, setLoading] = useState(false) 
   const [questions, setQuestions] = useState(false)
   const [index, setIndex] = useState(0)
